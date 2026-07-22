@@ -1,0 +1,57 @@
+# ==========================================
+# TRMNL & Secrets
+# ==========================================
+.trmnlp.yml
+
+# Generated build files and previews
+/build/
+_build/
+*.png
+*.jpg
+!docs/preview.png
+
+# ==========================================
+# WebStorm / JetBrains IDE
+# ==========================================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ==========================================
+# Docker & Logs
+# ==========================================
+*.log
+.docker/
+
+# ==========================================
+# Node.js / NPM
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*

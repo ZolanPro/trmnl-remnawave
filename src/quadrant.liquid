@@ -1,0 +1,25 @@
+<div class="layout layout--col gap--small">
+    <div class="grid grid--cols-2 gap--small h--full">
+        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--2 text--center h--full">
+            <span class="label 1bit:text--black">Today</span>
+            <span class="value value--small">{{ IDX_1.response.bandwidthLastTwoDays.current }}</span>
+        </div>
+
+        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--2 text--center h--full">
+            <span class="label 1bit:text--black">Online</span>
+            <span class="value value--small">{{ IDX_0.response.onlineStats.onlineNow }}</span>
+        </div>
+    </div>
+
+    <div class="grid grid--cols-2 gap--small h--full">
+        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--2 text--center h--full">
+            <span class="label 1bit:text--black">Nodes</span>
+            <span class="value value--small">{{ active_nodes }} / {{ IDX_2.response.size }}</span>
+        </div>
+
+        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--2 text--center h--full">
+            <span class="label 1bit:text--black">Users</span>
+            <span class="value value--small">{{ IDX_0.response.users.statusCounts.ACTIVE }} / {{ IDX_0.response.users.totalUsers }}</span>
+        </div>
+    </div>
+</div>

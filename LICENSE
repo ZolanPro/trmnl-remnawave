@@ -1,0 +1,62 @@
+# License
+
+## Creative Commons Attribution 4.0 International (CC-BY 4.0)
+
+Copyright (c) 2026 ZolanPro
+
+This work (visual design, data parsing logic, and markup) is licensed under the
+Creative Commons Attribution 4.0 International License.
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose,
+  even commercially
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your use.
+
+No additional restrictions — You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license permits.
+
+Full license text:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Human-readable summary:
+https://creativecommons.org/licenses/by/4.0/
+
+---
+
+## TRMNL Plugin Licensing
+
+By publishing this plugin (hereinafter "Work") as a TRMNL Recipe, the Creator
+agrees to the TRMNL Plugin Licensing terms:
+
+### General Use
+
+1. Visual design, data parsing logic, and markup shall conform to Creative
+   Commons "CC-BY 4.0" terms:
+   https://creativecommons.org/licenses/by/4.0/
+2. End-users may contact Creator for support.
+3. Best efforts will be made to sustain functionality for any number of
+   connections with up to 5 minute refresh intervals.
+4. Work may be removed, unlisted, or transferred to the TRMNL team due to
+   persistent malfunction or Creator non-responsiveness. Creator may reclaim
+   this Work by contacting the TRMNL team and resuming maintenance
+   responsibilities.
+
+### Exceptions
+
+1. If Work cannot sustain active connections or refresh rates, TRMNL may allow
+   rate limits and connection throttling, or higher payload limits than
+   documented.
+2. If TRMNL receives legal notice (e.g. DMCA takedown request), Work may be
+   de-listed despite satisfactory functionality.
+
+### More Information
+
+This TRMNL plugin license framework was created on January 2, 2026. Revisions:
+https://github.com/usetrmnl/plugin-license

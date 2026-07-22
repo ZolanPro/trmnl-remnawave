@@ -1,0 +1,10 @@
+services:
+  trmnlp:
+    image: trmnl/trmnlp:latest
+    container_name: trmnl-dev
+    ports:
+      - "4567:4567"
+    volumes:
+      - .:/plugin
+    command: serve --bind 0.0.0.0
+    restart: unless-stopped

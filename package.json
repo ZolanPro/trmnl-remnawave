@@ -1,0 +1,9 @@
+{
+  "name": "trmnl-remnawave",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "trmnlp serve",
+    "build": "trmnlp build",
+    "build:png": "trmnlp build --png"
+  }
+}

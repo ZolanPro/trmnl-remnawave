@@ -1,0 +1,43 @@
+---
+strategy: polling
+name: Remnawave Dashboard
+polling_verb: get
+polling_url: |
+  {{ api_url }}/api/system/stats
+  {{ api_url }}/api/system/stats/bandwidth
+  {{ api_url }}/api/nodes
+polling_headers: "Authorization=Bearer {{ api_token }}&Accept=application/json"
+no_screen_padding: 'no'
+dark_mode: 'no'
+refresh_interval: 15
+custom_fields:
+  - keyname: author_bio
+    field_type: author_bio
+    name: Author Bio
+    description: >-
+      Remnawave panel stats for TRMNL (traffic, nodes, users, online).<br/><br/>
+      Author: <a href="https://github.com/ZolanPro">ZolanPro</a><br/>
+      Repo: <a href="https://github.com/ZolanPro/trmnl-remnawave">trmnl-remnawave</a><br/>
+      Email: <a href="mailto:ZolanPro@gmail.com">ZolanPro@gmail.com</a><br/><br/>
+      Setup: create an API token in your Remnawave dashboard, then set API URL
+      (e.g. https://your-panel.example.com) and API Token below. Leave Polling Body empty.
+
+  - keyname: categories
+    field_type: select
+    name: Category
+    options:
+      - analytics
+    default: analytics
+
+  - keyname: api_url
+    field_type: text
+    name: API URL
+    description: Base URL of your Remnawave instance (no trailing slash)
+    placeholder: https://vpn.example.com
+    help_text: Example — https://vpn.example.com
+
+  - keyname: api_token
+    field_type: password
+    name: API Token
+    description: Bearer JWT from Remnawave (API tokens / panel settings)
+    help_text: Paste the token only — the Authorization header is added automatically
