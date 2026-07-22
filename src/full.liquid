@@ -1,41 +1,46 @@
 <div class="layout layout--col gap--medium">
     <div class="grid grid--cols-3 portrait:grid--cols-2 gap--medium h--full">
-        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full">
+        <div class="outline flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full">
             <span class="label 1bit:text--black">Traffic Today</span>
-            <span class="value value--large portrait:value--medium">{{ IDX_1.response.bandwidthLastTwoDays.current }}</span>
+            <span class="value value--large portrait:value--medium">{{ IDX_1.response.bandwidthLastTwoDays.current | default: '—' }}</span>
             <span class="description">Last 24h</span>
         </div>
 
-        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full">
+        <div class="outline flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full">
             <span class="label 1bit:text--black">Traffic 7 Days</span>
-            <span class="value value--large portrait:value--medium">{{ IDX_1.response.bandwidthLastSevenDays.current }}</span>
+            <span class="value value--large portrait:value--medium">{{ IDX_1.response.bandwidthLastSevenDays.current | default: '—' }}</span>
             <span class="description">Last week</span>
         </div>
 
-        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full portrait:col--span-2">
+        <div class="outline flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full portrait:col--span-2">
             <span class="label 1bit:text--black">Traffic 30 Days</span>
-            <span class="value value--large portrait:value--medium">{{ IDX_1.response.bandwidthLast30Days.current }}</span>
+            <span class="value value--large portrait:value--medium">{{ IDX_1.response.bandwidthLast30Days.current | default: '—' }}</span>
             <span class="description">Last month</span>
         </div>
     </div>
 
     <div class="grid grid--cols-3 portrait:grid--cols-2 gap--medium h--full">
-        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full">
+        <div class="outline flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full">
             <span class="label 1bit:text--black">Nodes</span>
-            <span class="value value--large portrait:value--medium">{{ active_nodes }} / {{ IDX_2.response.size }}</span>
+            <span class="value value--large portrait:value--medium">{{ active_nodes | default: '—' }} / {{ IDX_2.response.size | default: '—' }}</span>
             <span class="description">Active / total</span>
         </div>
 
-        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full">
+        <div class="outline flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full">
             <span class="label 1bit:text--black">Users</span>
-            <span class="value value--large portrait:value--medium">{{ IDX_0.response.users.statusCounts.ACTIVE }} / {{ IDX_0.response.users.totalUsers }}</span>
+            <span class="value value--large portrait:value--medium">{{ IDX_0.response.users.statusCounts.ACTIVE | default: '—' }} / {{ IDX_0.response.users.totalUsers | default: '—' }}</span>
             <span class="description">Active / total</span>
         </div>
 
-        <div class="metric flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full portrait:col--span-2">
+        <div class="outline flex flex--col flex--center-x flex--center-y gap--xsmall p--4 text--center h--full portrait:col--span-2">
             <span class="label 1bit:text--black">Online Now</span>
-            <span class="value value--large portrait:value--medium">{{ IDX_0.response.onlineStats.onlineNow }}</span>
+            <span class="value value--large portrait:value--medium">{{ IDX_0.response.onlineStats.onlineNow | default: '—' }}</span>
             <span class="description">Connected</span>
         </div>
     </div>
+</div>
+
+<div class="title_bar">
+  <svg class="image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" fill-rule="evenodd" d="M8 1a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-1.5 0V1.75A.75.75 0 0 1 8 1Zm6 2a.75.75 0 0 1 .75.75v8.5a.75.75 0 0 1-1.5 0v-8.5A.75.75 0 0 1 14 3ZM5 4a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-1.5 0v-6.5A.75.75 0 0 1 5 4Zm6 1a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 11 5ZM2 6a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 2 6Z"/></svg>
+  <span class="title">{{ trmnl.plugin_settings.instance_name | default: 'Remnawave' }}</span>
 </div>

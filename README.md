@@ -82,14 +82,8 @@ Paste this YAML into **Form Fields** (see [custom form builder](https://help.trm
     Repo: <a href="https://github.com/ZolanPro/trmnl-remnawave">trmnl-remnawave</a><br/>
     Email: <a href="mailto:ZolanPro@gmail.com">ZolanPro@gmail.com</a><br/><br/>
     Setup: create an API token in your Remnawave dashboard, then set API URL
-    (e.g. https://your-panel.example.com) and API Token below. Leave Polling Body empty.
-
-- keyname: categories
-  field_type: select
-  name: Category
-  options:
-    - analytics
-  default: analytics
+    (e.g. https://your-panel.example.com) and API Token below. Leave Polling Body empty.<br/><br/>
+    #analytics
 
 - keyname: api_url
   field_type: text

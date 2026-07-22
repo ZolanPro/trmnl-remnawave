@@ -1,13 +1,8 @@
-<style>
-    .metric {
-        border: 2px solid #000;
-        border-radius: 12px;
-    }
-</style>
-
 {% assign active_nodes = 0 %}
-{% for node in IDX_2.response %}
-  {% if node.isConnected and node.isDisabled == false %}
-    {% assign active_nodes = active_nodes | plus: 1 %}
-  {% endif %}
-{% endfor %}
+{% if IDX_2.response %}
+  {% for node in IDX_2.response %}
+    {% if node.isConnected and node.isDisabled == false %}
+      {% assign active_nodes = active_nodes | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}

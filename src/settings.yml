@@ -13,28 +13,23 @@ refresh_interval: 15
 custom_fields:
   - keyname: author_bio
     field_type: author_bio
-    name: Author Bio
+    name: About This Plugin
     description: >-
       Remnawave panel stats for TRMNL (traffic, nodes, users, online).<br/><br/>
-      Author: <a href="https://github.com/ZolanPro">ZolanPro</a><br/>
-      Repo: <a href="https://github.com/ZolanPro/trmnl-remnawave">trmnl-remnawave</a><br/>
-      Email: <a href="mailto:ZolanPro@gmail.com">ZolanPro@gmail.com</a><br/><br/>
       Setup: create an API token in your Remnawave dashboard, then set API URL
-      (e.g. https://your-panel.example.com) and API Token below. Leave Polling Body empty.
-
-  - keyname: categories
-    field_type: select
-    name: Category
-    options:
-      - analytics
-    default: analytics
+      (e.g. <a href="https://your-panel.example.com">https://your-panel.example.com</a>)
+      and API Token below. Leave Polling Body empty.
+    category: analytics
+    github_url: https://github.com/ZolanPro/trmnl-remnawave
+    email_address: ZolanPro@gmail.com
 
   - keyname: api_url
     field_type: text
     name: API URL
     description: Base URL of your Remnawave instance (no trailing slash)
     placeholder: https://vpn.example.com
-    help_text: Example — https://vpn.example.com
+    help_text: >-
+      Example — <a href="https://vpn.example.com">https://vpn.example.com</a>
 
   - keyname: api_token
     field_type: password
