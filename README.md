@@ -1,6 +1,6 @@
 # TRMNL Remnawave Dashboard
 
-A dashboard plugin for [TRMNL](https://trmnl.com/) e-paper displays that shows real-time statistics from your [Remnawave](https://github.com/remnawave/backend) instance.
+A dashboard plugin for [TRMNL](https://trmnl.com/) e-paper displays that shows real-time statistics from your [Remnawave](https://docs.rw/) instance.
 
 ![Preview](docs/preview.png)
 
